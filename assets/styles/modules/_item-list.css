@@ -1,0 +1,49 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.item-list {
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  line-height: 1.65;
+
+
+  @mixin atMedium {
+    height: 500px;
+  }
+
+  &__label {
+    font-weight: 300;
+    font-size: 1.1rem;
+    padding-bottom: .5rem;
+    padding-left: 2rem;
+    transition: background-color .3s ease-out;
+    border-radius: 3px;
+    background-color: rgba($navColor, .1);
+    animation: move .3s ease-out;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: rgba($navColor, .5);
+      color: $inputColor;
+    }
+
+    &--active {
+      background-color: rgba($navColor, .5);
+      color: $inputColor;
+    }
+  }
+}
+
+@keyframes move {
+    0% {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}

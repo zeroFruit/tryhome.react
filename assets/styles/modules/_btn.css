@@ -1,0 +1,13 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.btn {
+  background-color: $mainBlue;
+  text-decoration: none;
+  text-align: center;
+  padding: .75rem 1.2rem;
+  display: inline-block;
+
+}

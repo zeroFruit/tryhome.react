@@ -1,0 +1,20 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.select-editable {
+  position: relative;
+
+  select {
+    position:absolute;
+  }
+
+  input {
+    position:absolute;
+  }
+}
+
+.select-editable select:focus, .select-editable input:focus {
+     outline:none;
+ }

@@ -1,0 +1,23 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.site-footer {
+  background-color: rgba($navColor, .1);
+  color: #FFF;
+  padding: .5rem 0;
+  text-align: center;
+
+  &__text {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 200;
+
+    @mixin atMedium {
+      display: inline;
+      margin-bottom: 0;
+      margin-right: 1.4rem;
+    }
+  }
+}

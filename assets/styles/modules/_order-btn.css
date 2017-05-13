@@ -1,0 +1,25 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.order-btn {
+  padding: .75rem 1.2rem;
+  margin-left: 500px;
+  margin-right: 500px;
+  background-color: $navColor;
+  color: #FFF;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s ease-out;
+  
+  &:hover {
+    background-color: rgba($navColor, .8);
+  }
+  &--block {
+    background-color: rgba($navColor, .5);
+  }
+}

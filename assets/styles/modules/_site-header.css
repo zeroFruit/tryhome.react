@@ -1,0 +1,16 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.site-header {
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+  @mixin atMedium {
+    position: fixed;
+    background-color: rgba($mainBlue, .3);
+  }
+}

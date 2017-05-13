@@ -1,0 +1,32 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.item-option {
+  display: none;
+  transition: all .4s ease-out;
+  transform: scale(1.2);
+  animation: fadein .3s ease-out;
+
+  &--is-visible {
+    display: block;
+    margin-left: .5rem;
+    margin-right: 130px;
+    background-color: rgba($navColor, .1);
+    height: 185px;
+    transform: scale(1);
+  }
+
+}
+
+@keyframes fadein {
+    0% {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}

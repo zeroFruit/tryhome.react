@@ -1,0 +1,110 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.order-form {
+  margin-bottom: .75rem;
+  padding-right: 150px;
+  padding-left: 150px;
+  padding-top: .75rem;
+
+  &__btn {
+    cursor: pointer;
+    background-color: rgba($navColor, .25);
+    padding: .5rem .75em;
+    font-weight: 600;
+    font-size: .75rem;
+
+    &--l-margin {
+      margin-left: 10px;
+    }
+  }
+
+  &__caution-field {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: $mainOrange;
+  }
+
+  &__error {
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: red;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &__payment {
+    background-color: rgba($navColor, .25);
+    padding: .5rem .75em;
+    font-weight: 500;
+    font-size: 1rem;
+
+    &--l-minus-margin {
+      margin-left: -50px;
+    }
+
+    &--l-margin {
+      margin-left: 50px;
+    }
+  }
+
+  &__label {
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+  &__input {
+    width: 300px;
+    height: 1.5rem;
+    margin-left: -200px;
+    font-weight: 300;
+    font-size: 1rem;
+    background-color: rgba($inputColor, .5);
+
+    &--shorter {
+      width: 180px;
+    }
+
+    &--more-shorter {
+      width: 100px;
+    }
+    &--longer {
+      width: 450px;
+    }
+    &--r-margin {
+      margin-right: 10px;
+    }
+  }
+
+  &__select {
+    width: 200px;
+    height: 1.5rem;
+    position: absolute;
+    font-weight: 300;
+    font-size: 1rem;
+
+    &--l-margin {
+      margin-left: 10px;
+    }
+
+    &--input {
+      width: 180px;
+      height: 1.48rem;
+      font-weight: 300;
+      font-size: 1rem;
+    }
+  }
+
+  &__wrapper {
+    padding-bottom: 1rem;
+  }
+
+  input:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,71 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.primary-nav {
+  background-color: rgba($navColor, .1);
+  width: 100%;
+  color: #000;
+  padding: .3rem 0;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+
+
+  &:hover {
+    background-color: rgba($navColor, .3);
+  }
+  &__text {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+
+
+    &--light {
+      font-weight: 300;
+      font-size: 1rem;
+    }
+    &--visible {
+      animation: moveY .3s ease-out;
+      opacity: 1;
+    }
+    &--invisible {
+      animation: moveYinv .3s ease-out;
+      opacity: 0;
+      z-index: -5;
+    }
+  }
+
+
+  &--invisible {
+    animation: moveYinv .3s ease-out;
+    opacity: 0;
+    z-index: -5;
+  }
+}
+
+@keyframes moveY {
+    0% {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes moveYinv {
+    0% {
+      transform: translateY(0%);
+      opacity: 1;
+      display: inline-block;
+    }
+    100% {
+      transform: translateY(-50%);
+      opacity: 0;
+      display: none;
+    }
+}

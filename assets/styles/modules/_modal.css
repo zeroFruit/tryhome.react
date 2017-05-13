@@ -1,0 +1,35 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.modal {
+  position: fixed;
+  z-index: 5;
+  background-color: rgba(#000, .94);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: zoomout .3s ease-out;
+
+  &__inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__message {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.65;
+  }
+}
+
+@keyframes zoomout {
+    0% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}

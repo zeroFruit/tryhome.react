@@ -1,0 +1,25 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.cart-list {
+  position: relative;
+  padding-bottom: 2.5rem;
+  font-weight: 300;
+  font-size: 1rem;
+
+  @mixin atSmall {
+    padding-left: 94px;
+  }
+
+  &__option {
+    display: block;
+  }
+
+  &--head {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: $navColor;
+  }
+}

@@ -1,0 +1,41 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.selector {
+  margin-bottom: .75rem;
+  padding-right: .75rem;
+  padding-left: .75rem;
+  padding-top: .75rem;
+  text-align: center;
+
+  &__label {
+    font-weight: 500;
+    font-size: .75rem;
+  }
+
+  &__options {
+    float: right;
+    width: 250px;
+    height: 1.5rem;
+  }
+
+  &__submit {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: .75rem;
+    text-align: center;
+    font-weight: 700;
+    color: $inputColor;
+    background-color: rgba($navColor, .4);
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &--option-text {
+    font-size: .75rem;
+    text-align: center;
+  }
+}

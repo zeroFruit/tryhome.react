@@ -1,0 +1,49 @@
+@import "normalize.css";
+@import "../base/_variables";
+@import "../base/_mixins";
+@import "../base/_global";
+
+.generic-content-container {
+  p {
+    font-weight: 300;
+    line-height: 1.65;
+    margin: 0 0 1.8rem 0;
+
+    @mixin atSmall {
+      font-size: 1.125rem;
+    }
+
+    a {
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    picture {
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &--comment {
+    margin-left: 1.2rem;
+    background-color: rgba($navColor, .5);
+    color: #FFF;
+    padding: .45rem 1.2rem;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__photo {
+    width: 207px;
+    height: 109px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+}

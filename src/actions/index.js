@@ -44,7 +44,7 @@ export function fetchSite({ siteIndex }) {
   return dispatch => {
     request.then(res => {
       if (res.status !== 200 || res.data.code !== CODE.GET_SUCCESS) {
-        console.log('res', res);
+
       }
       dispatch({ type: FETCH_SITE, payload: res.data });
     });

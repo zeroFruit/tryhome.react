@@ -53,9 +53,6 @@ class ItemOrderBtn extends Component {
 
 function mapStateToProps (state) {
   let { cart: { totalCount, items, err } } = state;
-  console.log('totalCount', totalCount);
-  console.log('items', items);
-  console.log('err', err);
   totalCount = parseInt(totalCount);
 
   return { totalCount, err, items };

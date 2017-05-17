@@ -16,7 +16,7 @@
     font-weight: 300;
     margin-bottom: .8rem;
     margin-top: .7em;
-    text-align: center;
+    text-align: left;
     color: $navColor;
 
     @mixin atSmall {
@@ -24,11 +24,38 @@
       font-weight: 300;
       margin-bottom: .8rem;
       margin-top: 1em;
-      text-align: left;
 
       &--b-padding {
         padding-bottom: 3rem;
       }
+    }
+
+    &--center {
+      text-align: center;
+    }
+    
+    &--white {
+      color: white;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $navColor;
+
+    &--center {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &--white {
+      color: white;
+    }
+
+    &--t-margin {
+      margin-top: 1rem;
     }
   }
 }

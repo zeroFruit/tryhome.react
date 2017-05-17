@@ -10,6 +10,7 @@ import HeadlineStyles         from '../../assets/styles/modules/_headline.css'
 import RowStyles              from '../../assets/styles/modules/_row.css'
 import HeroStyles from '../../assets/styles/modules/_large-hero.css';
 import InfoImg        from '../../assets/images/info.jpg';
+import DescStyles             from '../../assets/styles/modules/_description.css';
 
 const SERVICE_QNA = {
   title: '서비스 이용',
@@ -136,7 +137,7 @@ class QnA extends Component {
 
                   <div className={RowStyles['row__medium-6']}>
                     <div className={FeatureStyles['feature-item']}>
-                      <img srcSet={`${InfoImg} 1920w`} className={HeroStyles['large-hero__image']} />
+                      <img srcSet={`${InfoImg} 1920w`} className={DescStyles['description']} />
                     </div>
                   </div>
 

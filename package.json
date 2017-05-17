@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node server.js",
     "build:prod": "gulp build && webpack --config webpack.config.prod.js --progress",
-    "start:prod": "cross-env NODE_ENV=production node server.prod.js"
+    "start:prod": "pm2 start ecosystem.config.js --only react --env production",
+    "stop:prod": "pm2 stop ecosystem.config.js --only react --env production",
+    "restart:prod": "pm2 restart ecosystem.config.js --only react --env production"
   },
   "author": "",
   "license": "ISC",
@@ -72,6 +74,7 @@
     "redux": "^3.0.4",
     "redux-form": "^6.6.3",
     "redux-promise": "^0.5.3",
-    "redux-thunk": "^2.0.1"
+    "redux-thunk": "^2.0.1",
+    "simple-react-modal": "^0.5.1"
   }
 }
